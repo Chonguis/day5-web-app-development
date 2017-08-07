@@ -1,0 +1,26 @@
+<h1>Album List</h1>
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>Artist</th>
+        <th>Album</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each _albums}}
+        <tr>
+          <td>{{id}}</td>
+          <td>{{artist}}</td>
+          <td>{{album}}</td>
+          <td>
+            <a href='/albums/{{id}}'>View</a>
+            <a href= >Edit</button>
+            <a href= >Delete</button>
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
